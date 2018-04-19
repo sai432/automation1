@@ -1,0 +1,17 @@
+  1  systemctl stop httpd
+    2  systemctl status httpd
+    3  curl http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm -O
+    4  ls -ltr
+    5  rpm -ivh epel-release-7-11.noarch.rpm
+    6  ls -ltr
+    7  rm -r *./rpm
+    8  rm -f *.rpm
+    9  vi epel.repo
+   10  yum update
+   11  yum install nginx
+   12  systemctl start nginx
+   13  systemctl enable nginx
+   14  systemctl status nginx
+   15  netstat -anlp | grep ":80"
+   16  history
+[root@ip-172-31-30-110 ~]#
