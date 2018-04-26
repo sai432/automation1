@@ -1,0 +1,8 @@
+ 1  vi /etc/hostname
+    2  vi /etc/hosts
+    3  init 6
+    4  yum install httpd -y
+    5  systemctl start httpd
+    6  systemctl status httpd
+    7  histary
+    8  history
